@@ -44,24 +44,4 @@ def BFS(graph,start_point = [sy,sx],goal_point = [gy,gx]):
 if BFS(C, [sy-1,sx-1], [gy-1,gx-1]):
     print(ans-1)
 
-#############3
-
-# while not q.empty():
-#     pos = q.get()
-#     print(pos)
-#     valid_pos = []
-#     for p in pos:
-#         for m in move:
-#             y, x = p[0]+m[0], p[1]+m[1]
-#             if y == gy and x == gx:
-#                 ans += 1
-#                 print(ans)
-#                 exit()
-#             else:
-#                 C[y-1][x-1] == '.':
-#                 C[y-1][x-1] = '#'
-#                 valid_pos.append((y, x))
-#     if len(valid_pos) != 0:
-#         q.put(valid_pos)
-#     ans += 1
-# print(ans-1)
+#幅探索はできたけど，経路の保存がわからん
